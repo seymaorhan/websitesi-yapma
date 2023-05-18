@@ -8,6 +8,102 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+        <style>
+           /*lkokul faian birleşik yyazana yer için*/
+            .all-browsers {
+              margin: 0;
+              padding: 5px;
+              background-color: lightgray;
+            }
+            
+            .all-browsers > h1, .browser {
+              margin: 10px;
+              padding: 5px;
+            }
+            
+            .browser {
+              background: white;
+            }
+            
+            .browser > h2, p {
+              margin: 4px;
+              font-size: 90%;
+            }
+            /*burada bitiyor*/
+            
+
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #7ea3c0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+ nav1 {
+  float: left;
+  width: 30%;
+  height: 700px; 
+  background: #ccd5db;
+  padding: 20px;
+}
+
+
+
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #7ea3c0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ </style>
+
 </head>
 
 <body>
@@ -18,6 +114,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -33,6 +130,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="takim.html">Takımımız</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ilgialanim.html">İlgi alanlarım</a>
+              </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="mirasımız.html" role="button" data-toggle="dropdown"
                         aria-expanded="false">
@@ -41,15 +141,16 @@
                     <div class="dropdown-menu">
 
                         <a class="dropdown-item" href="festival.html">Festivaller</a>
-                        <a class="dropdown-item" href="turkyemekleri.html">Geleneksel Türk Mutfağı</a>
                         <a class="dropdown-item" href="sokaklezzetleri.html">İstanbul Sokak Lezzetleri</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="mirasımız.html">Something else here</a>
-                    </div>
+                        <a class="dropdown-item" href="turkyemekleri.html">Geleneksel Türk Mutfağı</a>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="loginn.html">Log İn</a>
+              </li>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -58,6 +159,138 @@
             </form>
         </div>
     </nav>
+
+
+<br>
+
+
+    <header>
+        <h2>ÖZGEÇMİŞ</h2>
+      </header>
+      
+      <section>
+        <nav1>
+
+          <center> <h4>ŞEYMA ORHAN</h4></center> 
+          <center><img src="resimler/seymaa.jpg.jpeg" alt="seyma" style="width:350px;height:150px;"></center> 
+          <ul>
+           <br>
+           <h4>Okuduğum Okullar : </h4>
+            
+            <li><a href="https://avcilarmehmetcik.meb.k12.tr/">Mehmetçik İlkokulu</a></li>
+            <li><a href="https://filibeliahmethilmiiho.meb.k12.tr/">Filibeli Ahmet Ortaokulu</a></li>
+            <li><a href="https://sehitmuratkocaturkaihl.meb.k12.tr/"> Şehit Murat Kocatürk Proje Lisesi</a></li>
+            <li><a href="https://www.sakarya.edu.tr/"> Sakarya Üniversitesi</a></li>
+            <br>
+            <br>
+            <h4>Bildiğim Diller : </h4>
+            <li>İngilizce (A2 seviye)</li>
+            <li>Fransızca(A1 seviye)</li>
+            <li>Almanca(A1 seviye)</li>
+            <br>
+            <br>
+            <h4>Staj yaptığım yerler : </h4>
+            <br>
+            <li><a href="https://intertech.com.tr/">İntertech</a></li>
+            <br>
+            <br>
+        
+
+
+          </ul>
+          
+        </nav1>
+        
+        <article>
+         
+          <h3>İlkokul</h3>
+            <p>İlkokulu İstanbul 'un Avcılar ilçesinde bulunan Mehmetçik İlkokulu'nda okudum. İlkokulda izcilik takımındaydım ve orada etkinler yaparak doğayı dahaçok sevdim.</p>
+           <br>
+            <h3>Ortakul</h3>
+            <p>Ortaokulu İstanbul'un Avcılar ilçesinde bulunan Filibeli Ahmet Ortaokulunda okudum.Matematik ve fen bilimleri olimpiyat takımındaydım. Ortaokullar arası bilgi yarışmasında 3. oldum.</p>
+           <br>
+            <h3>Lise</h3>
+            <p>Liseyi İstanbul'un Avcılar ilçesinde bulunan Şehit Murat Kocatürk Proje Lisesi'nde bitirdim .Lisede yüzme takımındaydım. "Avcılar Okuyor" projesinde yer aldım. Lise sürecinde matematik olimpiyatlarında yer aldım.Tree Steps projesinde yer alarak ülkemizi temsil ettim. </p>
+            <br>
+            <h3>Üniversite</h3>
+            <p>Lise bitikten sonra giridğim YKS sınavı sonrasında 40 binlik bir sıralama yaparak Sakarya Üniversitesi Bilgisayar Mühendisliğini kazandım. Şu anda 1. sınıfım. SaeroTech'in İHA ve proje takımılarında yer alıyorum. Firsttech'te 1 aylık staj programına katılıp sertifikasını aldım.Birbirini geliştiren kadınlar kulübunde aktif üyeyim.  Susayan Nesiller projesinde yer aldım. Bu proje iklim krizine yönelik farkındalık oluşturmak amacıyla üniversite öğrencileri arasında yapılan bir proje. Bu projemizde kısa film çalışmalarımız oldu. Bu kısa filmin seneryosunu birkaç takım arkadaşımla yazdım.</p>
+            <p>Susayan Nesiller kısa filmini izlemek için için<a href="https://www.youtube.com/watch?v=J9P62Dcy-FY&t=81s">Tıklayınız</a></p></p>
+           <br>
+            <h3>Bildiğim Diller</h3>
+            <p>İngilizce , Fransızca ve Almanca diilerini biraz biliyorum. İngizcede B1 seviyesindeyim . Frasızca ve Almancada A1 seviyesindeyim.İngizilce  ve fransızca derslerini okulda gördük . Fransızcayı örenme sebebim ise fransızcayı sevmemden kaynaklanıyor. Önümüzdeki süreçlerde de Fransızcamı geliştrmek için eğitimler alacağım.</p>
+           
+
+        </article>
+      </section>
+      
+      <footer>
+        <p>seyma.orhan@ogr.sakarya.edu.tr </p>
+       
+      </footer>
+
+<br>
+<br>
+
+
+      <div class="container">
+        
+
+        <table style="width:100%">
+          <tr>
+            <th> <div class="card" style="width:400px">
+              <img class="card-img-top" src="resimler/seymaa.jpg.jpeg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Şeyma Orhan</h4>
+                <p class="card-text">Şuanda Sakarya üniversitesi bilgisayar mühendisliği 1. sınıftayım.19 yaşımdayım</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div></th>
+            <th><ul><li> <h2>Şeyma Orhan</h2>
+              <br>
+              <p>Merhaba ben Sakarya Üniversitesi Bilgisayar mühendisliği öğrencisi Şeyma Orhan. İleride siber güvenlik alanında çalışmak istiyorum.  Ailenin 2. çocuğuyum. Toplam 4 kardeşiz . Ablam Şevval, Düzce Üniversitesi Tıp Fakültesi 3. sınıf ööğrencisi. Erkek kardeşim Kayra 6. sınıfa gidiyor. Kız kardeşim Gamze ise 4. sınıfa gidiyor. Annem Fatma Orrhan ev hanımı. Babam Cumali Orhan ise züccaciyeci.İleride kendi şirketimi kurarak güzel bir başarı elde etmek istiyorum.  </p></li></ul></th>
+             
+           
+          </tr>
+        </table>
+      </div>
+          <br>
+          <br>
+          <br>
+
+
+          <!--
+<ul>
+  <li> <div class="card" style="width:400px">
+    <img class="card-img-top" src="resimler/seymaa.jpg.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Şeyma Orhan</h4>
+      <p class="card-text">Şuanda Sakarya üniversitesi bilgisayar mühendisliği 1. sınıftayım.19 yaşımdayım</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div></li>
+  <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, architecto molestiae atque officia soluta asperiores delectus quasi maxime quae cum voluptate. Consequatur ut id ab quas consequuntur, voluptas officiis earum, quae fuga accusamus eum, itaque vel soluta rem! Nostrum sapiente, voluptate nesciunt voluptatum dicta itaque debitis ad incidunt amet hic.</p></li>
+</ul>
+-->
+
+<!--
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="resimler/seymaa.jpg.jpeg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Şeyma Orhan</h4>
+            <p class="card-text">Şuanda Sakarya üniversitesi bilgisayar mühendisliği 1. sınıftayım.19 yaşımdayım</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        <br>
+        
+      <br>
+      <br>
+-->
+
+    
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

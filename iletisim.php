@@ -1,14 +1,46 @@
-<?<php
+<!DOCTYPE html>
+<html>
+<body>
 
-$a="bilgiler alındı.";
-echo "<b>".$a."<b><br>";
+<?php
 
-$adi=$_POST["isim"];
-echo "adınız:".$_POST["isim"]."<br>";
+
+
+$a="Bilgiler alındı...";
+echo "bHoşgeldiniz , ".$a."<br><br>";
+
+$email =$_GET["email"];
+echo "Öğrenci Numaranız: ".$_GET["email"]."<br><br>";
+
+$pwd =$_GET["pwd"];
+echo "Şifreniz: ".$_GET["pwd"]."<br><br>";
+
+$sehir =$_GET["sehir"];
+echo "Şehriniz: ".$_GET["sehir"]."<br><br>";
+
+$exampleRadios2 =$_GET["takim"];
+echo "Tuttuğunuz Takım: ".$_GET["takim"]."<br><br>";
+
+
+$exampleRadios1 =$_GET["cinsiyet"];
+echo "Cinsiyetiniz: ".$_GET["cinsiyet"]."<br><br>";
+
+
+$exampleRadios2 =$_GET["takim"];
+echo "Tuttuğunuz Takım: ".$_GET["takim"]."<br><br>";
+
+
+$renk =$_GET["renk"];
+echo "En sevdiğiniz renk: ".$_GET["renk"]."<br><br>";
+
+
+echo "Giriş Başarılı ".$email;
+
+
 
 ?>
 
 
 
-<b>veriler geldi</b>
-
+</body>
+</html>

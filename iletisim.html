@@ -8,6 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <script src="iletisim.js"></script>
+
+
 </head>
 
 <body>
@@ -18,6 +22,14 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!--
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+              <img src="resimler/istyazi.jpg" width="60" height="40" alt="">
+            </a>
+          </nav>
+          -->
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -33,6 +45,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="takim.html">Takımımız</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ilgialanim.html">İlgi alanlarım</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="mirasımız.html" role="button" data-toggle="dropdown"
                         aria-expanded="false">
@@ -44,12 +59,13 @@
                         <a class="dropdown-item" href="sokaklezzetleri.html">İstanbul Sokak Lezzetleri</a>
                         <a class="dropdown-item" href="turkyemekleri.html">Geleneksel Türk Mutfağı</a>
 
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="mirasımız.html">Something else here</a>
-                    </div>
+                     
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="iletisim.html">İletişim</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="loginn.html">Log İn</a>
                 </li>
 
             </ul>
@@ -73,13 +89,15 @@
         <form action="iletisim.php">
             <div class="form-group">
                 <label for="email">Öğrenci Numarası:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email">
             </div>
             <div class="form-group">
                 <label for="pwd">Şifre:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" id="pwd" required placeholder="Enter password" name="pwd">
             </div>
 
+
+          
 
             <div class="form-group">
                 <label for="sehir">Şehrinizi seçiniz</label>
@@ -92,6 +110,54 @@
                 </select>
             </div>
 
+            <div class="form-group">
+                <label for="takim">Tuttuğunuz takımı seçiniz</label>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="takim" id="takim"
+                            value=" Galatasaray" checked>
+                        <label class="form-check-label" for="exampleRadios2">
+                            Galatasaray
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="takim" id="takim"
+                            value=" Fenerbahçe" checked>
+                        <label class="form-check-label" for="exampleRadios2">
+                            Fenerbahçe
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="takim" id="takim"
+                            value=" Beşiktaş" checked>
+                        <label class="form-check-label" for="exampleRadios2">
+                            Beşiktaş
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="takim" id="takim" 
+                            value=" Trabzonspor" checked>
+                        <label class="form-check-label" for="exampleRadios2">
+                            Trabzonspor
+                        </label>
+                    </div>
+
+                </div>
+
+
+            <div class="form-group">
+                <label for="sehir">En sevdiğiniz rengi seçiniz</label>
+                <select class="form-control" id="renk" required placeholder="Enter option" name="renk">
+                    <option>Kırmızı</option>
+                    <option>Sarı</option>
+                    <option>Mavi</option>
+                    <option>Yeşil</option>
+                    <option>Siyah</option>
+                </select>
+            </div>
 
 
             <div class="form-group">
@@ -106,7 +172,7 @@
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cinsiyet" id="cinsiyet"
+                        <input class="form-check-input" type="radio" name="cinsiyet" id="cinsiyet" required
                             value="Erkek" checked>
                         <label class="form-check-label" for="exampleRadios2">
                             Erkek
@@ -117,10 +183,24 @@
                   
                     <button type="submit" class="btn btn-success">Giriş Yap</button>
                     <button type="reset" class="btn btn-secondary">Temizle</button>
-         
+
+                    <br>
+                    <br>
+
+                    <div class="container">
+
+                    <button type="button" class="btn btn-success" onclick="checkForm()">Formu Kontrol Et</button>
+                    <button type="button" class="btn btn-success" onclick="checkEmail()">E-postayı Kontrol Et</button>
+                </div>
            
         </form>
     </div>
+
+
+    
+<br>
+<br>
+<br>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
